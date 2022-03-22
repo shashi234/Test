@@ -1,0 +1,21 @@
+<body>  
+  <div class="container">
+    <h2>Simple Calculator Application</h2>
+
+    Value1 :  <input type="number" id="ValueA" #valA min="1"><br><br>
+    Value2 :  <input type="number" id="ValueB" #valB min="1"><br /><br>
+    Result from Calculator Service : <input type="text" id="Result" value="{{result}}" disabled /><br /><br>
+
+    <input type="button" value="Add" (click)="calculate(valA.value, valB.value, 'add')" id="btnAdd">
+    <input type="button" value="Substract" (click)="calculate(valA.value, valB.value, 'substract')" id="btnMinus">
+    <input type="button" value="Multiply" (click)="calculate(valA.value, valB.value, 'multiply')" id="btnMultiply">
+    <input type="button" value="Divide" (click)="calculate(valA.value, valB.value, 'division')" id="btnDivide">
+
+    <br /><br>
+    <h2>Get Prime</h2>
+    Enter the prime number position : <input type="number" id="Primeno" #prime min="1"><br /><br>
+    Prime no from service is : <input type="text" id="Result" value="{{presult}}" disabled /><br /><br>
+
+    <input type="button" value="GetPrimeNumber" (click)="primePos(prime.value)" id="btnPrime">
+  </div>
+</body>
