@@ -35,8 +35,7 @@ namespace Calculator
         }*/
 
         public int Multiply(int a, int b)
-        {
-            _logger.LogInformation($"Multiplication result is {a * b}");
+        {            
             return a * b;
         }
 
